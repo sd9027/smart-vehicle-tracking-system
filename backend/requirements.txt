@@ -1,0 +1,12 @@
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30
+sqlalchemy>=2.0.30,<2.2
+pymysql>=1.1
+# PyMySQL needs this for MySQL 8's default caching_sha2_password authentication
+cryptography>=42
+pydantic>=2.7,<3
+pydantic-settings>=2.3
+pyjwt>=2.8
+bcrypt>=4.1
+# Required by FastAPI for the form-based /api/auth/token endpoint (Swagger "Authorize")
+python-multipart>=0.0.9
